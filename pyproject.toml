@@ -1,0 +1,19 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "my-ai-search"
+version = "0.1.0"
+description = "CLI AI search engine"
+readme = "README.md"
+authors = [{name = "Developer"}]
+dependencies = [
+    "requests",
+    "click",
+    "rich",
+    "python-dotenv"
+]
+
+[project.scripts]
+aisearch = "search:main"
